@@ -1,0 +1,27 @@
+.submenu {
+    padding-left: 15px;
+    list-style: none;
+    margin-top: 5px;
+    display: none; /* Menyembunyikan submenu secara default */
+  }
+  
+  .nav-item:hover .submenu {
+    display: block; /* Menampilkan submenu saat kursor diarahkan ke nav-item */
+  }
+  
+  .submenu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .submenu a:hover {
+    color: #f1f1f1;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 16px;
+  }

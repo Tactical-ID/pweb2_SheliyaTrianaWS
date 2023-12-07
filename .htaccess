@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteBase /mvcStudiKasus/
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^home/?$ index.php?page=$1 [L]
+
+RewriteCond %(REQUEST_FILENAME) !-f
+RewriteCond %(REQUEST_FILENAME) !-d
+RewriteRule ^sekolah/?$ views/sekolah/index.php?page=$1 [L]
+RewriteRule ^tambahSekolah/?$ views/sekolah/tambah.php?page=$1 [L]
+RewriteRule ^proses_tambahSekolah/?$ views/sekolah/proses_tambah.php?page=$1 [L]
+RewriteRule ^editSekolah/?$ views/sekolah/edit.php
+RewriteRule ^hapusSekolah/?$ views/sekolah/hapus.php
+
+RewriteRule ^user/?$ views/user/index.php?page=$1 [L]
+RewriteRule ^tambahUser/?$ views/user/tambah.php?page=$1 [L]
+RewriteRule ^proses_tambahUser/?$ views/user/proses_tambah.php?page=$1 [L]
+RewriteRule ^editUser/?$ views/user/edit.php
+RewriteRule ^hapusUser/?$ views/user/hapus.php
+
+RewriteRule ^vaksin/?$ views/vaksin/index.php?page=$1 [L]
+RewriteRule ^tambahVaksin/?$ views/vaksin/tambah.php?page=$1 [L]
+RewriteRule ^proses_tambahVaksin/?$ views/vaksin/proses_tambah.php?page=$1 [L]
+RewriteRule ^editVaksin/?$ views/vaksin/edit.php
+RewriteRule ^hapusVaksin/?$ views/vaksin/hapus.php
+
+
+
+
